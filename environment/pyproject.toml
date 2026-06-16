@@ -1,18 +1,14 @@
 [project]
 name = "aind-vr-foraging-primary-data-nwb-packaging"
 version = "0.1.0"
-description = "Add your description here"
+description = "CodeOcean capsule that packages VR Foraging primary data into NWB"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "aind-behavior-vr-foraging",
+    "aind-behavior-vr-foraging-packaging",
     "aind-data-schema>2.0",
-    "contraqctor",
-    "aind-nwb-utils",
-    "hdmf-zarr",
-    "pynwb",
-    "ndx-events"
+    "ruff"
 ]
 
 [tool.uv.sources]
-ndx-events = { git = "https://github.com/rly/ndx-events.git"}
+aind-behavior-vr-foraging-packaging = { git = "https://github.com/AllenNeuralDynamics/Aind.Behavior.VrForaging.Packaging.git" }
